@@ -12,5 +12,6 @@ public interface ContatoServiceInterface {
 	public void editar(Contato contato);
 	public Contato buscarContatoNome();
 	public Contato buscarContatoEmail();
+	public Contato buscaContatoId(Long idContato);
 	
 }

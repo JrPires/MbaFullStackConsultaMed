@@ -10,8 +10,8 @@ public class ContatoService implements ContatoServiceInterface {
 	private ContatoDAO dao;
 	
 	
-	public ContatoService(ContatoDAO dao) {
-		this.dao = dao;
+	public ContatoService() {
+		this.dao = new ContatoDAO();
 	}
 
 	@Override
@@ -42,6 +42,11 @@ public class ContatoService implements ContatoServiceInterface {
 	@Override
 	public Contato buscarContatoEmail() {
 		return null;
+	}
+	
+	@Override
+	public Contato buscaContatoId(Long idContato) {
+		return this.dao.buscarPorId(idContato);
 	}
 
 }

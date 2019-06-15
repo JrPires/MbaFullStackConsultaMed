@@ -12,15 +12,23 @@ public class Main {
 				
 		Contato contato = new Contato();
 		contato.setId(null);
-		contato.setNome("José Pires");
+		contato.setNome("Jose Pires");
 		contato.setEmail("jpires_1@gmail.com");
 		contato.setTelefone("83 98888-8888");
+
+//		service.salvar(contato);
 		
+//		Contato contatoBanco = service.buscaContatoId(2L);
 		
-		Contato contatoBanco = service.buscarContatoId("jpires_1@hotmail.com");
+		service.listarContatos();
 		
+//		for(Contato c : contatos) {
+//			System.out.println(c.getNome());
+//		}
 		
-		System.out.println("Contato " + contato.getNome()+ " retornado com sucesso !");
+//		System.out.println("Contato " + contato.getEmail() + " retornado com sucesso.");
+
+		
 	}
 
 }
